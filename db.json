@@ -1,0 +1,30 @@
+{
+  "coord": {
+    "lon": -0.13,
+    "lat": 51.51
+  },
+  "temp": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "weather": [
+    {
+      "id": 300,
+      "main": "Drizzle",
+      "description": "light intensity drizzle",
+      "icon": "09d"
+    },
+    {
+      "id": 301,
+      "main": "Heavy",
+      "description": "Downpiur",
+      "icon": "09d"
+    }
+  ],
+  "base": "stations",
+  "id": 2643743,
+  "name": "London",
+  "cod": 200
+}
