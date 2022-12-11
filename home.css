@@ -1,0 +1,424 @@
+@CHARSET "UTF-8";
+
+/* View Problem Page */
+
+.main-container {
+    border: 1px solid;
+    border-radius: 5px;
+    max-height: auto;
+    margin-left:auto;
+    margin-right:auto;
+    width:1150px;
+    background-image: url("../resources/bg-image.png");
+    margin-bottom: 15px;
+}
+
+.another-main-container {
+    border: 1px solid;
+    border-radius: 5px;
+    max-height: auto;
+    margin-left:auto;
+    margin-right:auto;
+    width:1150px;
+    height: 620px;
+    background-image: url("../resources/bg-image.png");
+    margin-bottom: 15px;
+}
+
+.problems-sidebar {
+    border: 1px solid;
+    float: left;
+    height: 600px;
+    width: 300px;
+    margin: 5px;
+}
+
+.problem-worksheet {
+    background: white none repeat scroll 0 0;
+    border: 1px solid;
+    float: right;
+    height: 600px;
+    margin: 5px;
+    width: 825px;
+    overflow: auto;
+}
+
+.display-problem-description {
+    padding-left: 10px;
+    padding-right: 32px;
+    width: inherit;
+    max-height: 70px;
+}
+
+.display-problem-answer {
+    padding-left: 10px;
+    width: inherit;
+}
+
+.currently-selected-div {
+    background: #83c8f9 none repeat scroll 0 0;
+    color: white;
+    margin: 5px 0;
+}
+
+.problem-div {
+    margin: 5px 0;
+}
+
+.display-problem-title {
+    padding-top: 10px;
+    padding-left: 10px;
+    width: inherit;
+    height: 30px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.problem {
+    padding-left: 10px;
+    height: 450px;
+}
+
+#problemsTable {
+    width: inherit;
+}
+
+#problemsTable thead{
+    display: none;
+    height: 50px;
+}
+
+.dataTables_scrollHead {
+    display: none;
+}
+
+#problemsTable tbody{
+
+}
+
+#problemsTable tbody tr{
+}
+
+table.dataTable thead th {
+    border-bottom: 0px !important;
+}
+
+#problemsTable tr th{
+
+}
+
+#problemsTable th td{
+
+}
+
+.status-label, .status {
+    font-size: 14px;
+}
+
+.status-answered {
+    color: green;
+}
+
+.status-unanswered {
+    color: red;
+}
+
+.sidebar-title {
+    font-weight: bold;
+    height: 20px;
+    max-width: 270px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.sidebar-desc {
+    height: 20px;
+    max-width: 270px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-style: italic;
+    height: 20px;
+}
+
+.responses {
+    font-size: 14px;
+    color: orange;
+}
+
+/* View Problem Page */
+/* Common css across tabs */
+
+body {
+    font-family: "Myriad Set Text", "Myriad Set", "Myriad Pro", "Lucida Grande", sans-serif !important;
+}
+
+#main-title {
+    width: 30%;
+}
+
+#sub-title {
+    float: right;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.visible {
+    visibility: visible;
+}
+
+.section-input {
+    width: 500px;
+}
+
+.section-textarea {
+    width: 500px;
+    resize: none;
+}
+
+#problemCode {
+    height: 425px;
+    width: 770px;
+}
+
+#refProblemCode {
+    height: 425px;
+    width: 770px;
+}
+
+.problem-control-panel {
+    text-align: center;
+    padding-left: 10px;
+}
+
+.login, .logout {
+    float: right;
+    margin-top: -35px;
+    cursor: pointer;
+}
+
+.login-stuff {
+    margin-left: 38px;
+    margin-top: 40px;
+}
+/* Common css across tabs */
+/* Create Problem Page */
+
+.problem-form-sheet {
+    text-align: center;
+}
+
+.problem-class-name {
+    font-weight: bold;
+}
+
+.practice-class-name {
+    font-weight: bold;
+}
+
+.ref-problem-class-name {
+    font-weight: bold;
+}
+
+
+#code-edit-class {
+
+}
+
+.problem-container {
+    border: 3px solid black;
+    border-radius: 5px;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 10px;
+    background: white none repeat scroll 0 0;
+}
+
+.grading-container {
+    border: 3px solid black;
+    border-radius: 5px;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 10px;
+    background: white none repeat scroll 0 0;
+}
+
+.problem-class-name-start, .problem-class-name-end {
+    height: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    width: 500px;
+}
+
+.practice-class-name-start, .practice-class-name-end {
+    height: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    width: 500px;
+}
+
+
+.ref-problem-class-name-start, .ref-problem-class-name-end {
+    height: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    width: 500px;
+}
+
+.grading-class-name-start, .grading-class-name-end {
+    height: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    width: 500px;
+}
+
+.problem-class-name-end {
+    padding-bottom: 10px;
+}
+
+.practice-class-name-end {
+    padding-bottom: 10px;
+}
+
+.ref-problem-class-name-end {
+    padding-bottom: 10px;
+}
+
+.grading-class-name-end {
+    padding-bottom: 10px;
+}
+
+#problemDescription {
+    height: 80px;
+}
+
+#refProblemDescription {
+    height: 80px;
+}
+
+#problemCodeStart {
+    height: 150px;
+}
+
+#refProblemCodeStart {
+    height: 150px;
+}
+
+#problemCodeEnd {
+    height: 500px;
+}
+
+#refProblemCodeEnd {
+    height: 500px;
+}
+
+#practiceCodeStart {
+    height: 150px;
+}
+
+#practiceCodeEnd {
+    height: 500px;
+}
+
+#gradingCodeEnd {
+    height: 500px;
+}
+
+.problem-formulater {
+    font-weight: bold;
+    font-size: 20px !important;
+    padding-bottom: 5px;
+}
+
+#outputModal {
+    background: black none repeat scroll 0 0;
+    border: 1px solid white;
+    color: white;
+    font-size: 12px;
+    height: 600px;
+    margin-left: -500px !important;
+    overflow: auto;
+    width: 1000px;
+}
+
+.close-modal {
+    background-image: url("../resources/acc-close.png");
+    background-position: 2px 2px !important;
+    background-repeat: no-repeat !important;
+    background-size: 20px 18px !important;
+    cursor: pointer;
+    float: right;
+    height: 25px;
+    margin: 5px 5px 0 0;
+    width: 25px;
+}
+
+#successModal {
+    border: 3px solid lightgray;
+    margin-top: 10%;
+}
+
+.success-space {
+    font-size: 17px;
+    height: 120px;
+    text-align: left;
+    width: inherit;
+}
+
+.success-message {
+    height: 20px;
+    margin: 40px 0;
+    width: inherit;
+    text-align: center;
+}
+
+.output-space {
+    height: 565px;
+    padding-top: 35px;
+    width: inherit;
+    font-size: 17px;
+    text-align: left;
+}
+
+.output-line {
+    padding-left: 5px;
+}
+
+.submit-feedback, .view-feedback {
+    float: right;
+    margin-right: 16px;
+    margin-top: 7px;
+}
+
+.grade-view {
+    float: right;
+    margin-right: 150px;
+    margin-top: 7px;
+}
+
+#feedbackModal {
+    top: 300px;
+}
+
+.feedback-space {
+    padding: 10px;
+}
+
+#feedback {
+
+}
+
+.hover-star {
+    margin-left: 215px;
+    height: 50px;
+    width: inherit;
+}
+
+/* Create Problem Page */
